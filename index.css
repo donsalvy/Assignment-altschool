@@ -1,0 +1,274 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    color: black;
+    font-family: 'noto sans', sans-serif;
+    background-color: #F7FDFC;
+    height: 100mvh;
+}
+:root{
+    --black-color: #000B0A;
+    --cl-green:#2EC4B6; 
+}
+
+/* style for the main div */
+.hero{
+display: flex;
+width: 100%;
+height: 800px;
+background-color: #F7FDFC;
+margin: 0 auto;
+justify-content: center;
+align-items: center;
+margin-top: 50px;
+
+}
+/* style for the first section that contains the logo and text */
+.first-part{
+width: 460px;
+min-height: 275px;
+margin-inline-start: 140px;
+margin-block-end: 205px;
+margin-bottom: 20px;
+margin-right: 150px;
+}
+.first-part img{
+width: 77.33px;
+height: 80px;
+margin-left: -50px;
+
+}
+
+.first-part  h1{
+width: 268px;
+height: 50px;
+color: var(--cl-black, #000B0A);
+font-family: 'Noto sans', sans-serif;
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: 50px; /* 125% */
+letter-spacing: -0.8px;
+margin-top: 10px;
+}
+
+.first-part p,
+.texthidden p{
+font-size:16px ;
+font-weight: 400;
+line-height: 25px;
+color: #737373;
+}
+
+/* styling for the form page */
+.form{
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+margin-left: 40px;
+background: white;
+margin-bottom: 20px;
+}
+.form-content{
+background-color: white;
+width:580px ;
+height:679px ;
+box-shadow: 0px 4px 4px  rgba(4, 8, 19, 0.10);
+}
+
+.form-wrapper{
+display: flex;
+gap: 15px;
+}
+.form-wrapper,
+.left-side{
+margin-inline-start: 0;
+margin-block-start: 40px;
+}
+.form-wrapper,
+.right-side{
+margin-block-start: 40px;
+}
+.group{
+width: 238px;
+height: 72px;
+margin-bottom: 30px;
+}
+.group label{
+width: 238px;
+height: 16px;
+font-size: 14px;
+font-weight: 600; 
+}
+.group input{
+width: 238px;
+height: 48px;
+border-radius: 3px;
+border: 1px solid #f0f0f0;
+color:#737373;
+padding: 14px;
+margin-top: 10px;
+}
+.group select {
+width: 238px;
+height: 48px;
+border-radius: 3px;
+border: 1px solid #f0f0f0;
+color:#737373;
+padding: 14px;
+margin-top: 10px;
+}
+/* style for the activity label and input */
+.Activity{
+width: 500px;
+height: 72px;
+}
+
+.Activity input{
+width: 500px;
+height: 48px;
+border-radius: 3px;
+border: 1px solid #f0f0f0;
+
+
+}
+.Activity label{
+font-weight: 600;
+
+}
+.Activity select{
+width: 500px;
+height: 48px;
+border-radius: 3px;
+border: 1px solid #f0f0f0;
+margin-top: 10px;
+margin-bottom: 10px;
+color:#737373;
+padding: 14px;
+
+}
+.password-container {
+position: relative;
+}
+/* style for the eye icon */
+.fa-eye {
+position: absolute;
+top: 70%;
+right: 30px;
+transform: translateY(-50%);
+cursor: pointer;
+color: lightgrey;
+} 
+/* style for the register button */
+.register{
+width: 500px;
+height: 48px;
+background-color:var(--cl-green);
+box-shadow:0 4px 8px rgba(0, 0, 0, 0.10) ;
+border: none;
+margin-top: 20px;
+border-radius: 3px;
+padding: 16px;
+color: white;
+
+}
+/* style for the terms of use and policy */
+.terms{
+font-size: 14px;
+font-family: Sofia Pro;
+font-weight: 500;
+line-height: 25px;
+text-align: center;
+}
+.terms a{
+font-size: 14px;
+font-family: Sofia Pro;
+font-weight: 500;
+line-height: 25px;
+color:var(--cl-green, #2EC4B6);
+}
+/* style to change the border color on focus */
+.group input:focus,
+.group select:focus,
+.formAct input:focus,
+.formAct select:focus {
+    border-color: var(--cl-green);
+    outline: none; 
+}
+
+.password-container input:focus {
+    border-color: var(--cl-green); 
+    outline: none; 
+}
+/*style for media query*/
+@media screen and (min-width: 280px) and (max-width: 768px){
+.hero{
+display: flex;
+flex-direction: column;
+width:375px ;
+height:1294px ;
+}
+.first-part p{
+visibility: hidden;
+}
+.first-part img{
+width: 38.667px;
+height: 40px;
+margin-left: -40px;
+
+}
+.first-part::after {
+        content: "Inspiring wholesome harmony for the mind, body and spirit, for everyone, everywhere.";
+        display: block;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25px;
+        color: #737373;
+        margin-top: -100px;
+        
+        width: 367px;
+    }
+
+.first-part{
+margin-bottom: 0;
+margin-right: 0;
+margin-bottom: 40px; 
+
+}
+.form-wrapper{
+display: flex;
+flex-direction: column;   
+margin-top: -30px;
+   
+}
+.form-content{
+width: 327px;
+height: 870px;
+margin-top: -50px;
+}
+.right-side{
+margin-top: -20px;
+}
+.Activity select{
+width: 238px;
+height: 48px;
+}
+.Activity input {
+width: 238px;
+height: 48px;
+}
+.register{
+width: 238px;
+height: 48px;
+}
+.fa-eye {
+top: 70%;
+right: 280px;
+}
+.terms{
+width:50%;
+margin-top: 50px;
+margin-left: -25px;
+}
+}
