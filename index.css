@@ -17,7 +17,7 @@ body{
 /* style for the main div */
 .hero{
 display: flex;
-width: 100%;
+width: 80%;
 height: 800px;
 background-color: #F7FDFC;
 margin: 0 auto;
